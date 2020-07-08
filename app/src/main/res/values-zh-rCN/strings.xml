@@ -128,6 +128,10 @@
     <string name="filter_field_body">文本</string>
     <string name="filter_case_sensitive">区分</string>
     <string name="filter_case_insensitive">不区分</string>
+    <string name="filter_pattern_test_text">测试内容</string>
+    <string name="filter_pattern_test_button">测试表达式</string>
+    <string name="filter_pattern_test_hit">已命中</string>
+    <string name="filter_pattern_test_not_hit">未命中</string>
 
     <!-- Preferences -->
     <string name="settings">设置</string>

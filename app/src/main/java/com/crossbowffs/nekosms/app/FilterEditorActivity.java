@@ -156,7 +156,7 @@ public class FilterEditorActivity extends AppCompatActivity {
         return mFilter.getPatternForField(field);
     }
 
-    private String validatePatternString(SmsFilterPatternData patternData, int fieldNameId) {
+    public String validatePatternString(SmsFilterPatternData patternData, int fieldNameId) {
         if (patternData.getMode() != SmsFilterMode.REGEX) {
             return null;
         }
@@ -234,7 +234,7 @@ public class FilterEditorActivity extends AppCompatActivity {
         return FilterRuleLoader.get().update(this, mFilterUri, mFilter, true);
     }
 
-    private void showInvalidPatternDialog(String errorMessage) {
+    public void showInvalidPatternDialog(String errorMessage) {
         new AlertDialog.Builder(this)
             .setTitle(R.string.invalid_pattern_title)
             .setMessage(errorMessage)
